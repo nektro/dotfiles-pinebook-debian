@@ -30,6 +30,10 @@ apt install neofetch
 apt install vim
 apt instakll wget curl
 
+# meta programs
+apt install apt-file
+apt install firmware-misc-nonfree
+
 # install i3 x window manager
 apt install xinit
 apt install i3
