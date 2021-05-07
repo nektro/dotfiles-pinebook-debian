@@ -9,8 +9,8 @@ https://github.com/daniel-thompson/pinebook-pro-debian-installer/
 
 ```sh
 # switch to debian sid/unstable
-echo 'deb http://deb.debian.org/debian sid main' > /etc/apt/sources.list
-echo 'deb-src http://deb.debian.org/debian sid main' >> /etc/apt/sources.list
+echo 'deb http://deb.debian.org/debian sid main contrib non-free' > /etc/apt/sources.list
+echo 'deb-src http://deb.debian.org/debian sid main contrib non-free' >> /etc/apt/sources.list
 apt update
 apt full-upgrade
 
