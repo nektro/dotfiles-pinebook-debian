@@ -60,3 +60,7 @@ apt install code
 apt install jq
 apt install xz-utils
 apt install build-essential
+
+# sound
+apt install pulseaudio
+apt install pavucontrol
