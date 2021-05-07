@@ -124,3 +124,26 @@ ccd() {
     mkdir -p $1
     cd $1
 }
+update-zig() {
+    arch=$(uname -m)
+    os=$(uname -s | tr '[:upper:]' '[:lower:]')
+    double="$arch-$os"
+
+    if [[ $1 == *"dev"* ]]; then
+        wget -q --show-progress https://ziglang.org/builds/zig-linux-x86_64-$1.tar.xz
+    else
+        curl -s https://ziglang.org/download/index.json | jq ".\"$1\"" | jq --raw-output ".\"$double\".tarball" | wget -q --show-progress -i -
+    fi
+    file=$(ls | grep '.tar.xz')
+    tar -xf $file
+    folder=$file
+    folder=${folder%.*}
+    folder=${folder%.*}
+    rm $file
+    rm -fr ~/.local/lib/zig
+    rm -f ~/.local/bin/zig
+    mv $folder ~/.local/lib/zig
+    ln -s ~/.local/lib/zig/zig ~/.local/bin
+    echo
+    echo "Updated Zig to $folder"
+}
