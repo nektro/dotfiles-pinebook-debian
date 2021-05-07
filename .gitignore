@@ -1,0 +1,12 @@
+.cache
+.local
+.mozilla
+.pki
+.bash_*
+.xsession*
+.viminfo
+.wget*
+.Xauthority
+
+.config/*
+!.config/i3*
