@@ -55,3 +55,8 @@ wget -qO- https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
 echo 'deb https://packages.microsoft.com/repos/code stable main' >> /etc/apt/sources.list
 apt update
 apt install code
+
+# more code stuff
+apt install jq
+apt install xz-utils
+apt install build-essential
