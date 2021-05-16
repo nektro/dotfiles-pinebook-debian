@@ -149,3 +149,9 @@ update-zig() {
     echo
     echo "Updated Zig to $folder"
 }
+clbin() {
+    curl -F 'clbin=<-' https://clbin.com
+}
+zigbin() {
+    curl -F 'zigbin=<-' https://zigbin.io
+}
