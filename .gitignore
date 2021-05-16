@@ -7,6 +7,14 @@
 .viminfo
 .wget*
 .Xauthority
+dev
+gh
+.vscode
+Pictures
+Documents
+.git-*
+go
+Downloads
 
 .config/*
 !.config/i3*
