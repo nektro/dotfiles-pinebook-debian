@@ -64,3 +64,14 @@ apt install build-essential
 # sound
 apt install pulseaudio
 apt install pavucontrol
+
+# more stuff
+apt install htop
+apt install golang
+
+# llvm 11
+echo 'deb http://apt.llvm.org/unstable/ llvm-toolchain-11 main' >> /etc/apt/sources.list
+echo 'deb-src http://apt.llvm.org/unstable/ llvm-toolchain-11 main' >> /etc/apt/sources.list
+wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add -
+apt update
+apt install llvm-11
