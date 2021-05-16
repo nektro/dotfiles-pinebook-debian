@@ -1,0 +1,7 @@
+[user]
+	name = Meghan Denny
+	email = hello@nektro.net
+[init]
+	defaultBranch = master
+[credential]
+	helper = store
