@@ -180,3 +180,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# function keys
+bindsym Print exec flameshot gui
