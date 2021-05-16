@@ -25,3 +25,6 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+PATH="$PATH:$HOME/dev/zigmod/zig-out/bin"
+PATH="$PATH:$HOME/gh/gyro/zig-out/bin"
