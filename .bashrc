@@ -167,3 +167,9 @@ yargs() {
         echo $line | $@
     done
 }
+__wifi_find_networks() {
+    sudo iw dev wlan0 scan | grep 'SSID' | grep -v '* SSID List' | grep -v '\x00' | yargs cut -c 7-
+}
+wifi-find-networks() {
+    __wifi_find_networks | sed '/^$/d' | uniq -u
+}
