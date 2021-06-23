@@ -31,7 +31,7 @@ ethernet _first_ {
 }
 
 battery 0 {
-        format = "%status %percentage %remaining"
+        format = "%status %percentage"
 	path = "/sys/class/power_supply/cw2015-battery/uevent"
 }
 
