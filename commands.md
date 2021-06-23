@@ -75,3 +75,10 @@ echo 'deb-src http://apt.llvm.org/unstable/ llvm-toolchain-11 main' >> /etc/apt/
 wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add -
 apt update
 apt install llvm-11
+
+# more stuff
+apt install debtree
+apt install xdg-utils
+apt install nodejs
+apt install strace
+apt install simplescreenrecorder
