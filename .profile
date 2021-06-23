@@ -30,3 +30,4 @@ GOPATH="$HOME/go"
 
 PATH="$PATH:$HOME/dev/zigmod/zig-out/bin"
 PATH="$PATH:$HOME/gh/gyro/zig-out/bin"
+PATH="$PATH:$HOME/gh/cli/cmd/gh"
