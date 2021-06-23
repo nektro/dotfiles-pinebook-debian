@@ -132,7 +132,7 @@ update-zig() {
     double="$arch-$os"
 
     if [[ $1 == *"dev"* ]]; then
-        wget -q --show-progress https://ziglang.org/builds/zig-linux-x86_64-$1.tar.xz
+        wget -q --show-progress https://ziglang.org/builds/zig-$os-$arch-$1.tar.xz
     else
         curl -s https://ziglang.org/download/index.json | jq ".\"$1\"" | jq --raw-output ".\"$double\".tarball" | wget -q --show-progress -i -
     fi
