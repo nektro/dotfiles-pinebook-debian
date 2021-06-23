@@ -155,3 +155,8 @@ clbin() {
 zigbin() {
     curl -F 'zigbin=<-' https://zigbin.io
 }
+debtree-gen() {
+    debtree $1 > out.dot
+    dot -T png -o out.png out.dot
+    xdg-open out.png
+}
