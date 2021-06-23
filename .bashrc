@@ -160,3 +160,10 @@ debtree-gen() {
     dot -T png -o out.png out.dot
     xdg-open out.png
 }
+yargs() {
+    cat /dev/stdin |
+    while IFS= read -r line
+    do
+        echo $line | $@
+    done
+}
